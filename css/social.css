@@ -1,0 +1,29 @@
+h1 {
+    font-size: 220%;
+    color: #2E856D;
+    text-align: center;
+}
+body {
+    background-image: url(/Users/Arjay/Documents/website/images/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+}
+.fb img{
+    float: left;
+    padding: 0 20px 20px 0;
+}
+.fbname {
+    color: #60F5CB;
+    font-size: 110%;
+}
+h2 {
+    font-size: 220%;
+    color: #2E856D;
+    text-align: center;
+}
+button {
+    font-size: 110%;
+}
