@@ -1,0 +1,25 @@
+body {
+    background-image: url(/images/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1 {
+    font-size: 220%;
+    color: #2E856D;
+    text-align: center;
+}
+p {
+    color: #60F5CB;
+    font-size: 110%;
+}
+h2 {
+    font-size: 220%;
+    color: #2E856D;
+    text-align: center;
+}
+a {
+    font-size: 150%;
+    color: #60F5CB;
+}
