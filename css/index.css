@@ -3,6 +3,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Times New Roman', Times, serif;
 }
 h1 {
@@ -19,7 +20,6 @@ h2 {
     color: #2E856D;
     text-align: center;
 }
-a {
-    font-size: 150%;
-    color: #60F5CB;
+button {
+    font-size: 110%;
 }
