@@ -1,6 +1,6 @@
 h1 {
     font-size: 220%;
-    color: #2E856D;
+    color: #7FF3F9;
     text-align: center;
 }
 body {
@@ -9,20 +9,23 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS';
 }
-.fb img{
+.logo img{
     float: left;
     padding: 0 20px 20px 0;
 }
-.fbname {
-    color: #60F5CB;
+.name {
+    color: #50DDE5;
     font-size: 110%;
 }
 h2 {
     font-size: 220%;
-    color: #2E856D;
+    color: #7FF3F9;
     text-align: center;
+}
+h3 {
+    color: #7FF3F9;
 }
 button {
     font-size: 110%;

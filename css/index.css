@@ -4,21 +4,25 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS';
 }
 h1 {
     font-size: 220%;
-    color: #2E856D;
+    color: #7FF3F9;
     text-align: center;
 }
 p {
-    color: #60F5CB;
+    color: #50DDE5;
     font-size: 110%;
 }
 h2 {
     font-size: 220%;
-    color: #2E856D;
+    color: #7FF3F9;
     text-align: center;
+}
+h3 {
+    font-size: 150%;
+    color: #7FF3F9;
 }
 button {
     font-size: 110%;
