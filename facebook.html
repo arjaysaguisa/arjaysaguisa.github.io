@@ -31,19 +31,21 @@
             color: white;
             font-size: 90%;
             padding: 1px 1px 1px 1px;
+            font-family: Arial, sans-serif;
         }
 
         .credentials {
             margin-top: 5px;
             margin-left: 1%;
             margin-right: 1%;
+            padding-left: 1%;
             font-family: Arial, sans-serif;
             font-weight: bold;
             color: #8D9092;
         }
 
         #input {
-            padding: 10px;
+            padding-block: 10px;
             width: 97%;
         }
 
@@ -103,50 +105,33 @@
             text-align: center;
         }
     </style>
-    <script>
-        function home(){
-            document.location = "index.html";
-        }
-        function pasuser(form) {
-            if (input.user.value == "love") {
-                if (input.pass.value == "7monthsary") {
-                    location = 'seven.html';
-                    document.getElementById('wrong').style.display = "none";
-                } else {
-                    document.getElementById('wrong').style.display = "block";
-                    document.getElementById('wrong').innerHTML = "Wrong Password, Try again."
-                }
-            } else {
-                document.getElementById('wrong').style.display = "block";
-                document.getElementById('wrong').innerHTML = "Username is unidentified, Please try again."
-            }
-        }
-    </script>
+    <script src="fb.js"></script>
 </head>
 
 <body>
-        <header class="head">
-            <img id="fblogo" src="https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/k97pj8-or6s.png" style="display:block" onclick="home()">
-            <span id="wrong" style="display:none">Credentials you entered is Incorrect, Please try Again.</span>
-        </header>
-        <div class="credentials">
-            <p>Phone Number or Email</p>
-            <input id="input" type="user" name="user">
-            <p style="margin-top:15px">Password</p>
-            <input id="input" type="password" name="pass">
-        </div>
-        <div class="login">
-            <button id="inside" onclick="pasuser(this.form);">Log In</button>
-        </div>
-        <div class="line">
-            <span><b>or</b></span>
-        </div>
-        <div class="create">
-            <button id="nwacc">Create New Account</button>
-        </div>
-        <div class="forgot">
-            <a href="index.html">Forgot Password?</a>
-        </div>
+    <header class="head">
+        <img id="fblogo" src="https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/k97pj8-or6s.png" style="display:block"
+            onclick="home()">
+        <span id="wrong" style="display:none">Credentials you entered is Incorrect, Please try Again.</span>
+    </header>
+    <div class="credentials">
+        <p>Phone Number or Email</p>
+        <input id="input" type="user" name="user">
+        <p style="margin-top:15px">Password</p>
+        <input id="input" type="password" name="pass">
+    </div>
+    <div class="login">
+        <button id="inside" onclick="pasuser(this.form);">Log In</button>
+    </div>
+    <div class="line">
+        <span><b>or</b></span>
+    </div>
+    <div class="create">
+        <button id="nwacc" onclick="cnacct()">Create New Account</button>
+    </div>
+    <div class="forgot">
+        <a href="index.html">Forgot Password?</a>
+    </div>
 </body>
 
 </html>
