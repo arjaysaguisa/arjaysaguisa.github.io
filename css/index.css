@@ -29,3 +29,8 @@ button {
     background-color: gray;
     color: white;
 }
+#dtetm {
+    text-align:left;
+    font-size: 40%;
+    opacity: 0.75;
+}
