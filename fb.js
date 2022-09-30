@@ -14,7 +14,7 @@ function pasuser(form) {
     }
     if (input.user.value == "admin") {
         if (input.pass.value == "admin") {
-            window.location = 'http://www.google.com'
+            window.location = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'
             document.getElementById('wrong').style.display = "none";
         }
         else {
