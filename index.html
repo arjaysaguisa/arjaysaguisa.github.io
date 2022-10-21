@@ -9,29 +9,49 @@
 </head>
 
 <body>
+    <h1>
+        <marquee>Welcome to Arjay's Webpage</marquee><br>
+        <p id="dtetm">Date: <span id="clndr"></span></p>
+        <img src="/images/self.jpg">
+    </h1>
     <div>
-        <h1>
-            <marquee>Welcome to Arjay's Webpage</marquee><br>
-            <p id="dtetm">Date: <span id="clndr"></span></p>
-            <img src="/images/self.jpg">
-        </h1>
         <h3>Who am I?</h3>
         <p>Hello, I am Arjay Niño G. Saguisa. 17 years old, A 1st year IT student at University of Cebu - Banilad Campus
             and currently learning programming. This website serves as a test run for developing my skills to code.
-            Programming for me is hard but I got quite interested at this task.
+            Programming for me is hard but I got quite interested at this task. So far on this first semester, I
+            learned well and applied, updated my website becoming better.
         </p>
     </div>
-    <div>
-        <h2>Visit my other pages</h2>
-        <button onclick="document.location='eduback.html'">Educational Background</button>
-        <button onclick="document.location='social.html'">Social Media</button>
-        <button onclick="document.location='cat.html'">Cat</button>
-        <button onclick="document.location='facebook.html'">Facebook Clone</button>
-        <button onclick="document.location='template.html'">Template</button>
+    <div class="tooltip" id="switchatt" onclick="visibleTooltip()">Visit my other Pages
+        <span id="tooltiptext">
+            <table>
+                <tr onclick="document.location='eduback.html'">
+                    <td>Educational Background</td>
+                </tr>
+                <tr onclick="document.location='social.html'">
+                    <td>Social Media</td>
+                </tr>
+                <tr onclick="document.location='cat.html'">
+                    <td>Cat</td>
+                </tr>
+                <tr onclick="document.location='facebook.html'">
+                    <td>Facebook Clone</td>
+                </tr>
+            </table>
+        </span>
     </div>
-</body>
 <script>
-    
+
+    function visibleTooltip(){
+        document.getElementById("tooltiptext").style.visibility = "visible";
+        document.getElementById("switchatt").setAttribute("onclick", "invisibleTooltip()");
+    }
+
+    function invisibleTooltip(){
+        document.getElementById("tooltiptext").style.visibility = "hidden";
+        document.getElementById("switchatt").setAttribute("onclick", "visibleTooltip()");
+    }
+
     const d = new Date();
 
     d.getDate();

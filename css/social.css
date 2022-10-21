@@ -11,13 +11,6 @@ body {
     background-size: cover;
     font-family: 'Trebuchet MS';
 }
-.logo img{
-    float: left;
-    padding: 0 20px 20px 0;
-}
-.name {
-    color: #50DDE5;
-}
 h2 {
     font-size: 210%;
     color: #7FF3F9;

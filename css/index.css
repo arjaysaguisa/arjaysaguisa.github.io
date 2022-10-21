@@ -15,11 +15,7 @@ p {
     color: #50DDE5;
     font-size: 110%;
 }
-h2 {
-    font-size: 210%;
-    color: #7FF3F9;
-    text-align: center;
-}
+
 h3 {
     font-size: 150%;
     color: #7FF3F9;
@@ -33,4 +29,34 @@ button {
     text-align:left;
     font-size: 40%;
     opacity: 0.75;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 2px solid white;
+    color: #7FF3F9;
+    background-color: #808080;
+}
+.tooltip #tooltiptext {
+    visibility: hidden;
+    background-color: palegoldenrod;
+    color: #000000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    width: 125%;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -80px;
+    left: 102%;
+}
+  
+.tooltip:hover #tooltiptext {
+    visibility: visible;
+}
+
+.tooltiptext:hover {
+    visibility: visible;
 }

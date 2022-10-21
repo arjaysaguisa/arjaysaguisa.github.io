@@ -1,30 +1,39 @@
 function home() {
     document.location = "index.html";
 }
-function delay() {
+function wrong() {
     document.getElementById('wrong').style.display = "block";
     document.getElementById('wrong').innerHTML = "Wrong Credentials, Try again."
 }
 function pasuser(form) {
-    if (input.user.value == "love") {
-        if (input.pass.value == "7monthsaryhehe") {
-            location = 'seven.html';
-            document.getElementById('wrong').style.display = "none";
-        }
-    }
-    if (input.user.value == "admin") {
-        if (input.pass.value == "admin") {
-            window.location = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'
-            document.getElementById('wrong').style.display = "none";
-        }
-        else {
-            setTimeout(delay, 2000);
-        }
-    }
-    else {
-        setTimeout(delay, 2000);
+    switch(input.user.value){
+        case "love":
+            if(input.pass.value == "7monthsaryhehe"){
+                document.getElementById('wrong').style.display = "none";
+                location = '/motmotsurprises/seven.html';
+            }
+            else if(input.pass.value == "8thmonthlabyu"){
+                document.getElementById('wrong').style.display = "none";
+                location = '/motmotsurprises/eight.html';
+            }
+            else{
+                setTimeout(wrong, 2000);
+            }
+            break;
+        case "admin":
+            if(input.pass.value == "admin"){
+                document.getElementById('wrong').style.display = "none";
+                window.location = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'
+            }
+            else{
+                setTimeout(wrong, 2000);
+            }
+            break;
+        default:
+            setTimeout(wrong, 2000);
     }
 }
+
 function cnacct() {
     location = "account.html";
 }
